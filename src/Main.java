@@ -1,11 +1,14 @@
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        ArrayList<Person> students = new ArrayList<>();
-        Person person1 = new Person("Yeraly", "Zalel", 18, true);
-        System.out.println(person1.toString());
+    public static void main(String[] args) {
+        List<Student> students =  School.loadStudents("C:\\Users\\Acer\\OneDrive\\Рабочий стол\\Вещи\\students.txt");
+        List<Student> teachers =  School.loadStudents("C:\\Users\\Acer\\OneDrive\\Рабочий стол\\Вещи\\teachers.txt");
+        for (Student student : students) {
+            System.out.println(student);
+        }
+        for (Teacher teacher : teachers){
+            System
+        }
     }
 }
